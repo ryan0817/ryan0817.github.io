@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="SemiColonWeb" />
+
+	<!-- Stylesheets
+	============================================= -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Raleway:300,400,500,600,700|Crete+Round:400i" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="../css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="../css/style.css" type="text/css" />
+	<link rel="stylesheet" href="../css/dark.css" type="text/css" />
+	<link rel="stylesheet" href="../css/font-icons.css" type="text/css" />
+	<link rel="stylesheet" href="../css/animate.css" type="text/css" />
+	<link rel="stylesheet" href="../css/magnific-popup.css" type="text/css" />
+	<link rel="icon" href="../images/favicon.ico" type="image/x-ico" sizes="16x16">
+
+	<link rel="stylesheet" href="../css/responsive.css" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<!-- Document Title
+	============================================= -->
+	<title>什麼是SQL？什麼是NoSQL? 用簡單範例看一下他們的差異吧！ | Code Gym</title>
+
+</head>
+
+<body class="stretched">
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper" class="clearfix">
+
+		<!-- Header
+		============================================= -->
+		<header id="header" class="dark" data-sticky-class="not-dark" style="background-color:#389B9C;">
+
+			<div id="header-wrap">
+
+				<div class="container clearfix">
+
+					<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+					<!-- Logo
+					============================================= -->
+					<div id="logo">
+						<a href="../index.html" class="standard-logo" data-dark-logo="../images/logo-dark.png"><img src="../images/logo.png" alt="Code Gym Logo"></a>
+						<a href="../index.html" class="retina-logo" data-dark-logo="../images/logo-dark@2x.png"><img src="../images/logo@2x.png" alt="Code Gym Logo"></a>
+					</div><!-- #logo end -->
+
+					<!-- Primary Navigation
+					============================================= -->
+					<nav id="primary-menu" class="not-dark with-arrows">
+
+						<ul class="not-dark">
+							<li class="current"><a href="../index.html"><div>首頁</div></a></li>
+							<li class="mega-menu"><a href="#"><div>線上課程</div></a>
+								<!-- Mega Menu Content
+								============================================= -->
+								<div class="mega-menu-content style-2 border-top-0 clearfix">
+									<!-- Mega Menu Col 1 -->
+									<ul class="mega-menu-column col-lg-3">
+										<li>
+											<div class="feature-box not-dark fbox-small fbox-center nobottommargin">
+												<div class="fbox-icon">
+													<img src="../images/svg/java.svg" class="noradius nobg tleft" alt="" style="width: 52px;">
+												</div>
+												<h3 class="t500"><a href="https://hahow.in/cr/java-codegym" target="_blank">Java程式語言 從0到1</a></h3>
+												<p class="d-none d-lg-block mb-0 t300">本課程由淺入深，循序漸進教學，適合初學者和想要轉職人士</p>
+												<a href="https://hahow.in/cr/java-codegym" target="_blank" class="btn btn-link mt-2 color p-0">了解更多 &#8250;</a>
+											</div>
+										</li>
+									</ul>
+									<!-- Mega Menu Col 2 -->
+									<ul class="mega-menu-column col-lg-3">
+										<li>
+											<div class="feature-box not-dark fbox-small fbox-center nobottommargin">
+												<div class="fbox-icon">
+													<img src="../images/svg/database.svg" class="noradius nobg tleft" alt="" style="width: 52px;">
+												</div>
+												<h3 class="t500"><a href="https://hahow.in/cr/database" target="_blank">資料庫設計</a></h3>
+												<p class="d-none d-lg-block mb-0 t300">不論你是要架設網站系統、數據分析應用程式，都需要資料庫設計的技術，本課程適合對資料處理有興趣的初學者。</p>
+												<a href="https://hahow.in/cr/database" target="_blank" class="btn btn-link mt-2 color p-0">了解更多 &#8250;</a>
+											</div>
+										</li>
+									</ul>
+									<!-- Mega Menu Col 3 -->
+									<ul class="mega-menu-column col-lg-3">
+										<li>
+											<div class="feature-box not-dark fbox-small fbox-center nobottommargin">
+												<div class="fbox-icon">
+													<img src="../images/svg/python.svg" class="noradius nobg tleft" alt="" style="width: 52px;">
+												</div>
+												<h3 class="t500"><a href="https://www.udemy.com/course/codegym-python/?couponCode=CODEGYM-WEBSITE-0827" target="_blank">Python基礎課程和網路爬蟲入門實戰</a></h3>
+												<p class="d-none d-lg-block mb-0 t300">Python基礎教學和網路爬蟲技術，適合程式語言初學者，以及需要搜集網路資料的業界人士。</p>
+												<a href="https://www.udemy.com/course/codegym-python/?couponCode=CODEGYM-WEBSITE-0827" target="_blank" class="btn btn-link mt-2 color p-0">了解更多 &#8250;</a>
+											</div>
+										</li>
+									</ul>
+									<!-- Mega Menu Col 4 -->
+									<ul class="mega-menu-column col-lg-3">
+										<li>
+											<div class="feature-box not-dark fbox-small fbox-center nobottommargin">
+												<div class="fbox-icon">
+													<img src="../images/svg/youtube-icon.svg" class="noradius nobg tleft" alt="" style="width: 52px;">
+												</div>
+												<h3 class="t500"><a href="https://www.youtube.com/channel/UCuD3lRkYg9h02U5_e9c09Kw" target="_blank">Youtube免費教學課程</a></h3>
+												<p class="d-none d-lg-block mb-0 t300">Code Gym 免費課程單元都放在這裡，歡迎訂閱，接收最新消息。</p>
+												<a href="https://www.youtube.com/channel/UCuD3lRkYg9h02U5_e9c09Kw" target="_blank" class="btn btn-link mt-2 color p-0">了解更多 &#8250;</a>
+											</div>
+										</li>
+									</ul>
+									
+								</div>
+							</li>
+							<li><a href="../resource.html"><div>網路資源精選</div></a></li>
+							<!-- 
+							<li><a href="#"><div>資料視覺化</div></a></li>
+							-->
+							<li><a href="../about.html"><div>關於Code Gym</div></a></li>
+						</ul>
+
+					</nav><!-- #primary-menu end -->
+
+				</div>
+
+			</div>
+
+		</header><!-- #header end -->
+
+		<!-- Page Title
+		============================================= -->
+		<section id="page-title">
+
+			<div class="container clearfix">
+				<h1>什麼是SQL？什麼是NoSQL? 用簡單範例看一下他們的差異吧！</h1>
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="../index.html">首頁</a></li>
+					<li class="breadcrumb-item"><a href="../resource.html">網路資源精選</a></li>
+				</ol>
+			</div>
+
+		</section><!-- #page-title end -->
+
+		<!-- Content
+		============================================= -->
+		<section id="content">
+
+			<div class="content-wrap">
+
+				<div class="container clearfix">
+
+					<div class="single-post nobottommargin">
+
+						<div class="entry clearfix">												
+
+							<!-- Entry Image
+							============================================= -->
+							<div class="entry-image bottommargin">
+								<img src="../images/blog/202008/SQL-VS-NoSQL.jpg" alt="SQL-VS-NoSQL">
+							</div><!-- .entry-image end -->
+
+							<!-- Entry Content
+							============================================= -->
+							<div class="entry-content notopmargin">
+
+								<p>當你想要學習一項新技術時，資料庫和SQL可能不是你首先想到的。他看起來沒那麼潮，你可能會想到學習Python或R來進行資料分析。或者是Swift來開發iOS APP。在過去的幾年裡，你可能也聽說過越來越流行的新技術 NoSQL。但在大數據和資料分析的世界裡，資料庫和SQL比起以往任何時候都更重要。如果你正準備開始設計一個Web 應用程式，我相信你一開始大部分的時間會花在設計資料庫的架構上，而決定你的Web 應用程式的速度和數據準確性最重要的指摽，就是你的如何設計資料庫的架構。</p>								
+								<div class="divider"><i class="icon-circle"></i></div>
+
+								<h3>
+									<div class="text-rotater" data-separator="|" data-rotate="bounceIn" data-speed="2500">
+										什麼是 <span class="t-rotate color">資料庫|關聯式資料庫</span> ?
+									</div>
+								</h3>
+
+								<p>資料庫是一個有規則和序列，存放資料的集合，允許我們儲存和讀取資料。目前有許多不同類型的資料庫技術，每個類型都有不同的儲存和讀取資料的方式，但到目前為止，最流行的還是關聯式資料庫。</p>
+
+								<p>在關聯式資料庫中，資料存儲在 Table 中， Table 類似於 Excel 的表單，由欄和列組成的多個儲存格，Table 中有一個唯一的 key 來標識每一行數據。這些唯一的 key 可以用來將 Table 連接在一起。正是這種結構使我們能夠辨識和存取資料，建立起資料庫中其他區塊之間的關係。也正是這些關係，使得關聯式資料庫變得如此強大，並且在資料庫中提供資料的一致性。</p>
+
+								<p><h3>SQL 結構化查詢語言</h3></p>
+
+								<p>SQL (結構化查詢語言)是用於和關聯式資料庫溝通的語言，它用在資料庫中建立 Table ，以及從資料庫中新增、修改和刪除資料，串連 Table 之間的資料。在工程師社群的問答平台 Stackoverflow 的調查中發現，SQL 目前排名在程式語言的第三名，所以它是一個在開發人員中，普遍使用的程式語言，除了從Stackoverflow 客觀的圖表分析，根據Ryan 自己在業界工作的觀察，絕大多數的後端開發人員，不管你是使用哪一種程式語言，也都會使用SQL 存取資料庫中的資料，所以很少有人只會Java, Ptyhon, C# 程式語言，但不懂SQL 程式語言的開發工程師。</p>
+								
+								<img src="../images/blog/202008/SQL-VS-NoSQL-1.png" alt="SQL-VS-NoSQL">
+
+								<p></p>
+								<p>
+									SQL 語法使用起來非常簡單，我們只要寫好Table名稱、要搜尋的欄位名稱以及搜尋條件就可以了，像是下方我想在資料庫中搜尋書名為「斜槓人生」的書，我只要用SQL關鍵字select 後方寫下想要找出的欄位名稱，例如書名與出書年份，然後在關鍵字from 後方寫上table名稱book，最後則是搜尋條件，而這樣簡單的語法可以在Oracle, MySQL, MS SQL等關聯式資料庫上執行。
+								</p>
+
+								<!-- 使用SQL搜尋書籍資料示範程式碼 start -->
+<pre style="color:#000020;background:#f6f8ff;"><span style="color:#200080; font-weight:bold; ">SELECT</span> title<span style="color:#308080; ">,</span> <span style="color:#200080; font-weight:bold; ">year</span>
+<span style="color:#200080; font-weight:bold; ">FROM</span> book
+<span style="color:#200080; font-weight:bold; ">WHERE</span> title <span style="color:#308080; ">=</span> <span style="color:#1060b6; ">'斜槓青年'</span>
+</pre>	
+								<!-- 使用SQL搜尋書籍資料示範程式碼 end -->
+
+								
+								<div class="divider"><i class="icon-circle"></i></div>
+
+								<p>
+									目前著名的資料庫系統有甲骨文 Oracle、微軟 Microsoft SQL Server和 MySQL。這些資料庫都是關聯式資料庫，其中應用最廣泛的是MySQL。事實上，最近對stackoverflow的調查發現，超過50%的工程師在職業生活中使用過MySQL，其重要程度可見一斑。
+								</p>
+								<img src="../images/blog/202008/SQL-VS-NoSQL-2.png" alt="SQL-VS-NoSQL">
+
+								<div class="divider"><i class="icon-circle"></i></div>
+								<p><h3>NoSQL 資料庫</h3></p>
+								<p>
+									NoSQL是Not Only SQL的縮寫，和剛才前面介紹的不同是，NoSQL 資料庫是一種非關聯式資料庫，將資料儲存為類似 JSON 的文件，並對資料進行查詢，這是一個 document 資料庫模型，在這個模型中，資料並不存儲在 Table 中，doucment 是 key-value 的有序集合。資料庫中的每個doucment 不需要具有相同的數據結構，你可以將資料儲存在 JSON、XML文件甚至CSV文件 ，我下方使用紀錄書籍資訊的JSON格式作為範例，讓你更容易理解。
+								</p>
+								<p>
+									這是使用JSON格式紀錄的書籍資料，這裏有兩本書，分別是「斜槓青年」與「巴菲特寫給股東的信」，使用key-value 的方式紀錄資料，像是書名的key值，就是title，value值就是「斜槓青年」，這樣我們在找資料時，只要搜尋key值title等於「斜槓青年」，就可以找到資料。
+								</p>
+
+								<!-- 紀錄書籍資訊JSON 格式程式碼 start -->
+								<div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">[
+    {
+        <span style="color: #1e90ff; font-weight: bold">&quot;year&quot;</span> : <span style="color: #009999">2017</span>,
+        <span style="color: #1e90ff; font-weight: bold">&quot;title&quot;</span> : <span style="color: #aa5500">&quot;斜槓青年&quot;</span>,
+        <span style="color: #1e90ff; font-weight: bold">&quot;info&quot;</span> : {
+            <span style="color: #1e90ff; font-weight: bold">&quot;release_date&quot;</span> : <span style="color: #aa5500">&quot;2017-09-01&quot;</span>,
+            <span style="color: #1e90ff; font-weight: bold">&quot;rating&quot;</span> : <span style="color: #009999">8.2</span>,
+            <span style="color: #1e90ff; font-weight: bold">&quot;genres&quot;</span> : [<span style="color: #aa5500">&quot;生涯規劃&quot;</span>, <span style="color: #aa5500">&quot;商業理財&quot;</span>],
+            <span style="color: #1e90ff; font-weight: bold">&quot;plot&quot;</span> : <span style="color: #aa5500">&quot;全球職涯新趨勢，迎接更有價值的多職人生&quot;</span>,
+            <span style="color: #1e90ff; font-weight: bold">&quot;actors&quot;</span> : <span style="color: #aa5500">&quot;Susan Kuang&quot;</span>
+        }
+    },
+    {
+        <span style="color: #1e90ff; font-weight: bold">&quot;year&quot;</span>: <span style="color: #009999">2017</span>,
+        <span style="color: #1e90ff; font-weight: bold">&quot;title&quot;</span>: <span style="color: #aa5500">&quot;巴菲特寫給股東的信&quot;</span>,
+        <span style="color: #1e90ff; font-weight: bold">&quot;info&quot;</span>: {
+            <span style="color: #1e90ff; font-weight: bold">&quot;plot&quot;</span>: <span style="color: #aa5500">&quot;巴菲特親筆撰述唯一著作&quot;</span>,
+            <span style="color: #1e90ff; font-weight: bold">&quot;rating&quot;</span>: <span style="color: #009999">8.3</span>
+        }
+    }
+]
+</pre></div>
+								<!-- 紀錄書籍資訊JSON 格式程式碼 end -->
+
+								<p></p>
+								<p>
+									但是存取資料的方式，必須使用資料庫系統提供的 API 才能夠新增、修改、刪除資料，也就是需要透過程式語言呼叫特定的函式，或是使用資料庫系統 提供的指令，遠端連線執行後才能存取資料，像是Amazon 的雲端服務AWS，也有提供NoSQL的資料庫服務，名稱是DynamoDB，下面是一段使用Python 程式語言搜尋「斜槓青年」這本書的簡單範例，其中最重要的是有中文「斜槓青年」這一行，搜尋的方式是使用Key物件，使用函式eq判斷書名是否相同，如果相同就會將書籍資料回傳，並且可以透過下面for 迴圈一本一本找出來，列印出書名或其他相關資訊。
+								</p>	
+
+								<!-- DynamoDB 示範程式碼 start -->									
+<pre style="color:#000020;background:#f6f8ff;"><span style="color:#200080; font-weight:bold; ">import</span> boto3
+<span style="color:#200080; font-weight:bold; ">from</span> boto3<span style="color:#308080; ">.</span>dynamodb<span style="color:#308080; ">.</span>conditions <span style="color:#200080; font-weight:bold; ">import</span> Key
+
+dynamodb <span style="color:#308080; ">=</span> boto3<span style="color:#308080; ">.</span>resource<span style="color:#308080; ">(</span><span style="color:#1060b6; ">'dynamodb'</span><span style="color:#308080; ">,</span> endpoint_url<span style="color:#308080; ">=</span><span style="color:#1060b6; ">'http://localhost:8000'</span><span style="color:#308080; ">)</span>
+table <span style="color:#308080; ">=</span> dynamodb<span style="color:#308080; ">.</span>Table<span style="color:#308080; ">(</span><span style="color:#1060b6; ">'Book'</span><span style="color:#308080; ">)</span>
+response <span style="color:#308080; ">=</span> table<span style="color:#308080; ">.</span>query<span style="color:#308080; ">(</span>KeyConditionExpression<span style="color:#308080; ">=</span>Key<span style="color:#308080; ">(</span><span style="color:#1060b6; ">'title'</span><span style="color:#308080; ">)</span><span style="color:#308080; ">.</span>eq<span style="color:#308080; ">(</span><span style="color:#1060b6; ">'斜槓青年'</span><span style="color:#308080; ">)</span><span style="color:#308080; ">)</span>
+<span style="color:#200080; font-weight:bold; ">for</span> book <span style="color:#200080; font-weight:bold; ">in</span> response<span style="color:#308080; ">[</span><span style="color:#1060b6; ">'Items'</span><span style="color:#308080; ">]</span><span style="color:#308080; ">:</span>
+        <span style="color:#200080; font-weight:bold; ">print</span><span style="color:#308080; ">(</span>book<span style="color:#308080; ">[</span><span style="color:#1060b6; ">'title'</span><span style="color:#308080; ">]</span><span style="color:#308080; ">)</span>
+</pre>
+
+</pre>
+								<!-- DynamoDB 示範程式碼 end -->
+
+								<p>
+									NoSQL 資料庫的優點是它們能夠處理大量的結構化或半結構化數據，更容易擴展，並且能夠提供高可用性。使用NoSQL 資料庫的一些好例子包括：事件記錄（例如存儲用戶登錄）、電子商務應用（存儲用戶購物車的數據）和即時的分析。
+								</p>	
+
+								<div class="divider"><i class="icon-circle"></i></div>
+								<p><h3>SQL與NoSQL的比較</h3></p>	
+								<p>
+									雖然No​​SQL 資料庫與關聯式資料庫相比確實有一些優勢，但也有很多缺點。數據一致性和數據完整性是NoSQL資料庫的主要問題，另一個缺點是缺乏標準化。例如SQL 語法適用於所有關聯式資料庫（MySQL、Oracle、MS SQL等），雖然一些特定的函式，語法上有些差異，但大致來說都是使用SQL 的語法操作資料庫，而NoSQL資料庫沒有這樣的標準語言，不同的NoSQL資料庫之間存在很大的差異，剛才上面是使用AWS DynamoDB 範例，我們需要匯入AWS的套件，以及使用特定的函式操作，但如果是使用另一個NoSQL資料庫，像是Firebase，那就需要匯入另一個套件和使用另一組函式來操作資料庫，所以學習SQL 程式語言會是CP值更高的一種投資，因為你不用再另外花時間學習多個操作資料庫的方法。
+								</p>	
+
+								<p>
+									在這個信息驅動的大數據時代，為你開發的系統選擇正確的資料庫，比以往任何時候都重要。雖然關聯式資料庫已經存在了40多年，你可能會被 "較新 “的NoSQL資料庫技術所吸引，但有一些事情你需要考慮。關係型資料庫提供的數據一致性和數據完整性意味著，如果你的系統是處理金融信息和交易，那麼數據一致性是必須的。如果你希望你的資料庫是安全的，關聯式資料庫提供的安全功能，在這方面有明顯的優勢，而且你只需要學習10~20條簡單的SQL 語法，就能夠操作大部分的資料庫數據。
+								</p>			
+								<p>
+									所有這些都意味著，使用關係型資料庫和SQL是至關重要的。關係型資料庫長期以來一直位居第一是有很好的原因的，90%的時間裡它們都是最好的選擇，而且這種情況不會很快改變，如果你有興趣學習更多關於SQL的知識。可以看看我的課程《資料庫設計 - 有效的使用系統資料》。這堂課程幫助許多初學者學會SQL 語法，也受到許多同學的好評，課程中使用MySQL作為課程示範，相信這堂課程會成為你學習資料庫和資料分析的重要基石。
+									<br>
+									<a href="https://hahow.in/cr/database">https://hahow.in/cr/database</a>
+								</p>
+
+
+
+
+
+															
+							</div>
+						</div><!-- .entry end -->						
+
+						<!-- Post Author Info
+						============================================= -->
+						<div class="card">
+							<div class="card-header"><strong>文章作者 <a href="../about.html">Ryan</a></strong></div>
+							<div class="card-body">
+								<div class="author-image">
+									<img src="../images/about/ryan.jpg" alt="" class="rounded-circle">
+								</div>
+								<p>Code Gym 創辦人Ryan，有多年軟體開發實務經驗，喜歡程式語言與電腦相關技術，並且不斷自我學習和成長，慢慢地發現與人分享知識的喜悅，所以建立此網站分享知識訊息，與有需要的人一起彼此學習成長。</p>
+							</div>
+						</div><!-- Post Single - Author End -->						
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</section><!-- #content end -->
+
+		<!-- Footer
+		============================================= -->
+		<footer id="footer" class="dark">
+
+			<div class="container">
+
+				<!-- Footer Widgets
+				============================================= -->
+				<div class="footer-widgets-wrap pb-4 clearfix">
+
+					<div class="row">
+
+						<div class="col-md-4 col-sm-6 mb-0 mb-sm-4 mb-md-0">
+
+							<div class="widget clearfix">
+
+								<h4>關於Code Gym</h4>
+
+								<p>提供優質的線上課程<br>分享實用的網路資源</p>
+
+								<div style="background: url('images/world-map.png') no-repeat left center; background-size: auto 100%;">
+									<p>&nbsp;</p>
+									<strong>Email:</strong> codegym.tech@gmail.com
+									<p>&nbsp;</p>
+									<p>&nbsp;</p>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="col-md-4 col-6 mt-5 mt-sm-0">
+
+							<div class="widget clearfix">
+
+								<h4>網站資訊</h4>
+								<ul class="list-unstyled iconlist ml-0">
+									<li><a href="https://hahow.in/cr/java-codegym" target="_blank">Java 程式語言</a></li>
+									<li><a href="https://hahow.in/cr/database" target="_blank">資料庫設計</a></li>
+									<li><a href="https://www.udemy.com/course/codegym-python/?couponCode=CODEGYM-WEBSITE-0827" target="_blank">Python基礎課程和網路爬蟲入門實戰</a></li>
+									<li><a href="../resource.html">網路資源精選</a></li>
+									<!--
+									<li><a href="dataset.html">資料視覺化</a></li>
+									-->
+									<li><a href="../about.html">關於Code Gym</a></li>
+								</ul>
+
+							</div>
+
+						</div>
+
+						<div class="col-md-4 col-6 mt-5 mt-sm-0">
+
+							<div class="widget clearfix">
+
+								<h4>關注我們</h4>
+
+								<ul class="list-unstyled iconlist">
+									<li><i class="icon-facebook"></i><a href="https://www.facebook.com/CodeGym.Technology/" target="_blank"> Facebook</a></li>
+									<!--
+									<li><i class="icon-instagram"></i><a href="http://instagram.com/semicolonweb" target="_blank"> Instagram</a></li>
+									-->
+									<li><i class="icon-youtube"></i><a href="https://www.youtube.com/channel/UCuD3lRkYg9h02U5_e9c09Kw" target="_blank"> YouTube</a></li>
+									<li><i class="icon-github"></i><a href="https://github.com/Code-Gym" target="_blank">Github</a></li>
+								</ul>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div><!-- .footer-widgets-wrap end -->
+
+				<div class="line line-sm m-0"></div>
+
+			</div>
+
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights" class="nobg">
+
+				<div class="container clearfix">
+
+					<div class="col-md-12">
+						Copyrights &copy; 2019 All Rights Reserved by Code Gym<br>						
+					</div>					
+
+				</div>
+
+			</div><!-- #copyrights end -->
+
+		</footer><!-- #footer end -->
+
+	</div><!-- #wrapper end -->
+
+	<!-- Go To Top
+	============================================= -->
+	<div id="gotoTop" class="icon-angle-up"></div>
+
+	<!-- External JavaScripts
+	============================================= -->
+	<script src="../js/jquery.js"></script>
+	<script src="../js/plugins.js"></script>
+
+	<!-- code style -->
+	<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-88173607-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-88173607-1');
+	</script>
+
+	<!-- Facebook Pixel Code -->
+	<script>
+	  !function(f,b,e,v,n,t,s)
+	  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+	  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+	  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+	  n.queue=[];t=b.createElement(e);t.async=!0;
+	  t.src=v;s=b.getElementsByTagName(e)[0];
+	  s.parentNode.insertBefore(t,s)}(window, document,'script',
+	  'https://connect.facebook.net/en_US/fbevents.js');
+	  fbq('init', '1261016057290740');
+	  fbq('track', 'PageView');
+	</script>
+	<noscript><img height="1" width="1" style="display:none"
+	  src="https://www.facebook.com/tr?id=1261016057290740&ev=PageView&noscript=1"
+	/></noscript>
+	<!-- End Facebook Pixel Code -->
+
+	<!-- Footer Scripts
+	============================================= -->
+	<script src="../js/functions.js"></script>
+
+</body>
+</html>
